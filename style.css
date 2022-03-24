@@ -1,2 +1,48 @@
+* {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.gallery {
+  margin: 0 auto;
+  padding: 41px 240px 24px;
+}
+
+.gallery__profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery__profile > img {
+  border-radius: 16px;
+  width: 217px;
+  height: 217px;
+}
+
+.gallery__profile__name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.gallery__profile__from {
+  margin-top: 4px;
+  color: #a9a9a9;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 767px) {
+  .gallery {
+    padding: 18px 12px 24px;
+  }
+  .gallery__profile > img {
+    width: 200px;
+    height: 200px;
+  }
+  .gallery__profile__name {
+    font-size: inherit;
+    margin-top: 5px;
+  }
 }
