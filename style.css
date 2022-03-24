@@ -1,6 +1,7 @@
 * {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  color: #4e5150;
 }
 
 .gallery {
@@ -33,16 +34,54 @@
   font-weight: 600;
 }
 
+.gallery__profile__data {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__profile__detail {
+  padding: 14px 5% 17px;
+  border-radius: 12px;
+  background-color: #e5e5e5;
+  font-weight: 600;
+  min-width: 100px;
+}
+.gallery__profile__detail:not(:last-child) {
+  margin-right: 24px;
+}
+
+.gallery__profile__details__number {
+  font-size: 18px;
+}
+.gallery__profile__details__char {
+  color: #bdbdbd;
+}
+
 @media screen and (max-width: 767px) {
   .gallery {
     padding: 18px 12px 24px;
   }
   .gallery__profile > img {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
   }
   .gallery__profile__name {
     font-size: inherit;
     margin-top: 5px;
+  }
+  .gallery__profile__from {
+    font-size: 10px;
+  }
+  .gallery__profile__detail {
+    padding: 14px 3% 17px;
+    font-size: 12px;
+    min-width: 78px;
+  }
+  .gallery__profile__details__number {
+    font-size: inherit;
+  }
+  .gallery__profile__details__char {
+    font-size: inherit;
   }
 }
